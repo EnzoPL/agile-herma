@@ -1,8 +1,8 @@
 ﻿<Window x:Class="agile_herma.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="500" Width="500">
+    <Grid Background="#FF329105">
         
     </Grid>
 </Window>
