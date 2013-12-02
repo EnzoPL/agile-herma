@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="500" Width="500">
     <Grid Background="#FF329105">
-        
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="30" Margin="234,228,0,0" Stroke="Black" VerticalAlignment="Top" Width="20"/>
+
     </Grid>
 </Window>
