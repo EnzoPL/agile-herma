@@ -49,9 +49,12 @@ namespace agile_herma
            set { _y = value; }
        }
 
-       public Voiture(int pX ,int pY, int pV = 0)
+       public Voiture(int pX ,int pY)
        {
-           this.Vitesse = pV;
+           this.Longueur = 3;
+           this.Largeur = 2;
+           this.Vitesse = 0;
+           this.Direction = 0;
            this.X = pX;
            this.Y = pY;
        }
@@ -59,7 +62,10 @@ namespace agile_herma
 
        public Voiture()
        {
+           this.Longueur = 3;
+           this.Largeur = 2;
            this.Vitesse = 0;
+           this.Direction = 0;
            this.X = 0;
            this.Y = 0;
        }
