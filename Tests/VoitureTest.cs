@@ -33,6 +33,7 @@ namespace Tests
             Assert.AreNotEqual(9000, v.X);
         }
 
+        [TestMethod]
         public void TestCorrectionPositionMaxX()
         {
             Voiture v = new Voiture(10000000, 0);
@@ -40,6 +41,7 @@ namespace Tests
             Assert.AreEqual(0, v.Y);
         }
 
+        [TestMethod]
         public void TestCorrectionPositionMaxY()
         {
             Voiture v = new Voiture(10000000, 0);
@@ -47,6 +49,7 @@ namespace Tests
             Assert.AreEqual(0, v.Y);
         }
 
+        [TestMethod]
         public void TestCorrectionPositionMinX()
         {
             Voiture v = new Voiture(-1, 0);
@@ -54,6 +57,7 @@ namespace Tests
             Assert.AreEqual(0, v.Y);
         }
 
+        [TestMethod]
         public void TestCorrectionPositionMinY()
         {
             Voiture v = new Voiture(0, -1);
@@ -62,6 +66,7 @@ namespace Tests
         }
 
         #endregion
+
 
         [TestMethod]
         public void TestDirectionInitiale()
@@ -75,14 +80,6 @@ namespace Tests
         {
             var v = new Voiture();
             Assert.AreEqual(0, v.Vitesse);
-        }
-
-        [TestMethod]
-        public void TestPosition()
-        {
-            Voiture v = new Voiture(9000,9000);
-            Assert.AreNotEqual(9000, v.Y);
-            Assert.AreNotEqual(9000, v.X);
         }
 
         #endregion

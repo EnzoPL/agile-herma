@@ -10,8 +10,22 @@ namespace agile_herma
    {   
        private int _x;
        private int _y;
-       public long _direction;
-       public int _vitesse;
+       private long _direction;
+       private int _vitesse;
+       private long _largeur;
+       private long _longueur;
+
+       public long Longueur
+       {
+           get { return _longueur; }
+           set { _longueur = value; }
+       }
+
+       public long Largeur
+       {
+           get { return _largeur; }
+           set { _largeur = value; }
+       }
 
        public long Direction
        {
