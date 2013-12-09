@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace agile_herma
 {
    public class Voiture
-   {
+   {   
        private int _x;
        private int _y;
 
@@ -38,12 +38,6 @@ namespace agile_herma
        {
            this.X = 0;
            this.Y = 0;
-       }
-
-       public String positionParDefaut()
-       {
-           String coord = "La voiture est a : " + X + ", " + Y;
-           return coord;
        }
 
    }
