@@ -89,13 +89,24 @@ namespace Tests
 
         #endregion
 
+        #region Direction
         [TestMethod]
         public void TestDirectionInitiale()
         {
             var v = new Voiture();
             Assert.AreEqual(0, v.Direction);
         }
+        public void TestDirectionSetGet()
+        {
+            var v = new Voiture();
+            v.Direction = 2;
+            Assert.AreEqual(2, v.Direction);
+        }
 
+        #endregion
+
+
+        #region Vitesse
         [TestMethod]
         public void TestVitesseInitiale()
         {
@@ -103,6 +114,15 @@ namespace Tests
             Assert.AreEqual(0, v.Vitesse);
         }
 
+        [TestMethod]
+        public void TestAcceleration()
+        {
+            var v = new Voiture();
+            v.Vitesse = 4;
+            v.Accelerer ((long)0.5);
+            Assert.AreEqual(6, v.Vitesse);
+        }
+        #endregion
         #endregion
     }
 

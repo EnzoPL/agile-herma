@@ -11,7 +11,7 @@ namespace agile_herma
        private int _x;
        private int _y;
        private long _direction;
-       private int _vitesse;
+       private long _vitesse;
 
        private long _largeur;
        private long _longueur;
@@ -33,11 +33,20 @@ namespace agile_herma
            get { return _direction; }
            set { _direction = value; }
        }
-       public int Vitesse
+       public long Vitesse
        {
            get { return _vitesse; }
            set { _vitesse = value; }
        }
+       public void Accelerer (long acc) 
+       { 
+           // !!!!!!!!!!!!!!!!!!!!!!!!!
+           // Vitesse max à modifier
+            if (this.Vitesse < 300) { 
+                this.Vitesse = this.Vitesse * acc;
+            }
+       }
+
        public int X
        {
            get { return _x; }
