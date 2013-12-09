@@ -12,6 +12,7 @@ namespace agile_herma
        private int _y;
        private long _direction;
        private int _vitesse;
+
        private long _largeur;
        private long _longueur;
 

@@ -11,6 +11,28 @@ namespace Tests
     {
 
         #region TestsInitiaux
+
+        #region Forme
+        [TestMethod]
+        public void TestFormeInitiale()
+        {
+            Voiture v = new Voiture();
+            Assert.AreEqual(2, v.Largeur);
+            Assert.AreEqual(3, v.Longueur);
+        }
+
+        [TestMethod]
+        public void TestSetForme()
+        {
+            Voiture v = new Voiture();
+            v.Largeur = 5;
+            v.Longueur = 7;
+            Assert.AreEqual(5, v.Largeur);
+            Assert.AreEqual(7, v.Longueur);
+        }
+
+        #endregion
+
         #region Position
 
         [TestMethod]
@@ -66,7 +88,6 @@ namespace Tests
         }
 
         #endregion
-
 
         [TestMethod]
         public void TestDirectionInitiale()
