@@ -10,6 +10,7 @@ namespace agile_herma
     {
         public int x { get; set; }
         public int y { get; set; }
+        //public long direction { get; set; }
         //public int vitesse { get; set; }
 
         public Voiture()
